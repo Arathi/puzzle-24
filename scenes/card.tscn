@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://brs1o8hoar52v"]
+
+[ext_resource type="Script" path="res://scenes/card.gd" id="1_utc4x"]
+[ext_resource type="Texture2D" uid="uid://bixlb3jjh8v0v" path="res://assets/cards/ace_of_clubs.png" id="2_jfktm"]
+[ext_resource type="Script" path="res://scenes/card-background.gd" id="3_mmcr4"]
+
+[node name="PokerCard" type="Node2D"]
+script = ExtResource("1_utc4x")
+
+[node name="FG" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("2_jfktm")
+centered = false
+
+[node name="BG" type="Node2D" parent="."]
+z_index = 1
+script = ExtResource("3_mmcr4")
